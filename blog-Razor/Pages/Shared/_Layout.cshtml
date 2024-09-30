@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>پست های من</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="~/images/favicon.ico">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="~/library/bootstrap/css/bootstrap.min.css">
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" type="text/css" href="~/library/fontawesome/css/all.min.css">
+
+	<!-- Google web fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400italic,600,700,700italic,800" rel="stylesheet" type="text/css">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="~/css/style.css" type="text/css">
+	<link rel="stylesheet" href="~/css/media.css" type="text/css">
+
+	<!-- Color schema -->
+	<link class="colors" rel="stylesheet" type="text/css" href="~/colors/blue.css">
+
+	<!-- Linea icons -->
+	<link rel="stylesheet" type="text/css" href="~/library/linea/arrows/styles.css" />
+	<link rel="stylesheet" type="text/css" href="~/library/linea/basic/styles.css" />
+	<link rel="stylesheet" type="text/css" href="~/library/linea/ecommerce/styles.css" />
+
+	<!-- Owl carousel -->
+	<link rel="stylesheet" type="text/css" href="~/library/owlcarousel/owl.carousel.min.css">
+
+	<!-- Slick nav -->
+	<link rel="stylesheet" type="text/css" href="~/library/slicknav/slicknav.css">
+
+	<!-- Slick carousel -->
+	<link rel="stylesheet" type="text/css" href="~/library/slick/slick.css">
+
+	<!-- Animated -->
+	<link rel="stylesheet" type="text/css" href="~/library/animate/animate.css">
+
+	<!-- Magnific popup -->
+	<link rel="stylesheet" type="text/css" href="~/library/magnificpopup/magnific-popup.css">
+
+	<!-- YTPlayer -->
+	<link rel="stylesheet" type="text/css" href="~/library/ytplayer/css/jquery.mb.ytplayer.min.css">
+
+	<!-- Settings (Remove it on your site) -->
+	<link rel="stylesheet" href="~/library/settings/settings.css" type="text/css">
+
+</head>
+
+<body data-spy="scroll" data-target="#navigation" data-offset="65">
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="spinner-loader">
+			<div class="load1"></div><div class="load2"></div><div class="load3"></div><div class="load4"></div><div class="load5"></div>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header>
+		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+
+				<div class="navbar-header">
+
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" data-rjs="2" alt="" />
+					</a>
+
+					<!-- Responsive menu button -->
+					<div class="navbar-toggle"></div>
+
+				</div>
+				<div id="responsive-menu"></div>
+
+				<!-- Navigation -->
+				<div class="navbar-collapse collapse" id="navigation">
+					<ul class="nav navbar-nav navbar-right  main-navigation" id="main-menu">
+						<li class="active"><a asp-page="/Index">صفحه اصلی</a></li>
+                        <li><a href="#blog">وبلاگ</a></li>
+                        <li><a asp-page="/CreateArticle">فرم ایجاد پست</a></li>
+
+						<li><a href="#contact">تماس با ما</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+	<section class="banner parallax image-bg" id="home">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="header-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="bg-grey blog-home" id="blog">
+        <div class="container">
+			@RenderBody()
+        </div>
+    </section>
+    
+
+				
+
+    <!-- Contact -->
+				<!-- Footer -->
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+
+								<!-- Back to top -->
+								<a class="to-top"><i class="fas fa-angle-up"></i></a>
+
+								<div class="footer-logo">
+									<img src="~/images/icon.png" data-rjs="2" alt="" />
+								</div>
+
+								<div class="footer-social">
+									<ul>
+										<li><a href="#"><i class="fab fa-fw fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-fw fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-fw fa-deviantart"></i></a></li>
+										<li><a href="#"><i class="fab fa-fw fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fab fa-fw fa-behance"></i></a></li>
+										<li><a href="#"><i class="fab fa-fw fa-instagram"></i></a></li>
+									</ul>
+								</div>
+
+								<div class="copyright-text">
+									<p>فارسی و راست چین شده توسط <a href="https://netcopy.ir" target="_blank">نت کپی</a></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</footer>
+
+				<!-- jQuery -->
+				<script data-cfasync="false" src="~/js/email-decode.min.js"></script><script src="~/library/jquery/jquery.js"></script>
+
+				<!-- Bootstrap -->
+				<script src="~/library/bootstrap/js/bootstrap.min.js"></script>
+
+				<!-- Plugins -->
+				<script src="~/library/retina/retina.min.js"></script>
+				<script src="~/library/backstretch/jquery.backstretch.min.js"></script>
+				<script src="~/library/parallax/jquery.parallax.js"></script>
+				<script src="~/library/smoothscroll/smoothscroll.js"></script>
+				<script src="~/library/scrollto/jquery.scrollto.min.js"></script>
+				<script src="~/library/validator/validator.min.js"></script>
+				<script src="~/library/waypoints/waypoints.min.js"></script>
+				<script src="~/library/counterup/jquery.counterup.min.js"></script>
+				<script src="~/library/owlcarousel/owl.carousel.min.js"></script>
+				<script src="~/library/slicknav/jquery.slicknav.js"></script>
+				<script src="~/library/slick/slick.min.js"></script>
+				<script src="~/library/wow/wow.min.js"></script>
+				<script src="~/library/magnificpopup/jquery.magnific-popup.min.js"></script>
+				<script src="~/library/ytplayer/jquery.mb.ytplayer.min.js"></script>
+
+				<!-- Main -->
+				<script src="~/js/main.js"></script>
+
+				<!-- Settings (Remove it on your site) -->
+				<script src="~/library/settings/jquery.cookies.min.js"></script>
+				<script src="~/library/settings/settings.js"></script>
+
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171793417-4"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag() { dataLayer.push(arguments); }
+					gtag('js', new Date());
+
+					gtag('config', 'UA-171793417-4');
+				</script>
+
+</body>
+</html>
